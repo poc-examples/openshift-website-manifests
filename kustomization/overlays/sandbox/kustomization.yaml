@@ -4,8 +4,8 @@ kind: Kustomization
 bases:
 - ../../base
 # Patches to modify the base resources for this specific overlay
-patchesStrategicMerge:
-- image.yaml
+# patchesStrategicMerge:
+# - image.yaml
 # For example, deployment-patch.yaml might adjust the replica count or set environment-specific environment variables.
 
 # Common labels for this overlay
