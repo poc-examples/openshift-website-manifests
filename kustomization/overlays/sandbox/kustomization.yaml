@@ -1,10 +1,8 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-
 # Base resources to be imported from the base configuration
 bases:
 - ../../base
-
 # Patches to modify the base resources for this specific overlay
 patchesStrategicMerge:
 - image.yaml
@@ -13,3 +11,6 @@ patchesStrategicMerge:
 # Common labels for this overlay
 commonLabels:
   env: sandbox
+images:
+- name: docker.io/cengleby86/test-image
+  newTag: "0.12"
