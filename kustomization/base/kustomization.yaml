@@ -4,7 +4,6 @@ kind: Kustomization
 # List of resources to include in this base
 resources:
 - deployment.yaml
-- service.yaml
 
 # Common labels to add to all resources and selectors
 commonLabels:
