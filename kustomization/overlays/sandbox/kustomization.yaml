@@ -3,14 +3,11 @@ kind: Kustomization
 # Base resources to be imported from the base configuration
 bases:
 - ../../base
-# Patches to modify the base resources for this specific overlay
-# patchesStrategicMerge:
-# - image.yaml
-# For example, deployment-patch.yaml might adjust the replica count or set environment-specific environment variables.
 
 # Common labels for this overlay
 commonLabels:
   env: sandbox
+
 images:
 - name: docker.io/cengleby86/test-image
   newTag: "0.12"
