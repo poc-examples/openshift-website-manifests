@@ -8,4 +8,4 @@ commonLabels:
   env: sandbox
 images:
 - name: docker.io/cengleby86/test-image
-  newTag: "0.16"
+  newTag: "0.17"

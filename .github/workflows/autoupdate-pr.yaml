@@ -1,0 +1,18 @@
+name: Open PR on autoupdate push
+
+on:
+  push:
+    branches:
+      - autoupdate
+
+jobs:
+  createPR:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: create pull request
+      run: gh pr create -B main -H autoupdate --title 'Merge autoupdate into main' --body 'Automated through Github action'
+      env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
