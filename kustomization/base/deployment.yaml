@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: httpd
-        image: docker.io/cengleby86/test-image:latest
+        image: docker.io/cengleby86/test-image:0.18
         ports:
         - containerPort: 8080
       imagePullSecrets:
