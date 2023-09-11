@@ -3,7 +3,7 @@ name: Open PR on autoupdate push
 on:
   push:
     branches:
-      - autoupdate
+      - somebranch
 
 jobs:
   createPR:
